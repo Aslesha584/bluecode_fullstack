@@ -1,0 +1,12 @@
+{
+  "name": "blue-code-os-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blue Code - OS full-stack starter",
+  "scripts": {
+    "install:client": "npm --prefix client install",
+    "install:server": "npm --prefix server install",
+    "build": "npm --prefix client run build",
+    "check:server": "npm --prefix server run check"
+  }
+}

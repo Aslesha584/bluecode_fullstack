@@ -1,0 +1,11 @@
+# Security checklist
+- [ ] Real secrets live only in `server/.env`; never commit it.
+- [ ] `JWT_SECRET` is random and at least 32 characters.
+- [ ] MongoDB user has least-privilege access; IP access is restricted.
+- [ ] `CLIENT_ORIGIN` lists only trusted frontend origins.
+- [ ] HTTPS is enabled before public deployment.
+- [ ] Hunter and OpenRouter calls are made only from backend routes.
+- [ ] Do not log API keys, passwords, full email content, or sensitive personal data.
+- [ ] Verify Hunter data usage/storage terms and privacy notices before customer launch.
+- [ ] Test auth, per-user workspace isolation, API errors, quotas, and backups.
+- [ ] Email sending and payments remain disabled until a provider/merchant flow is implemented and tested.
